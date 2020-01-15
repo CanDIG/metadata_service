@@ -1,0 +1,363 @@
+table	field	description	type	example	tf4cn	profyle	pog
+Alignment	alignmentTool		program	Samtools 1.5	1	1	1
+Alignment	alignmentId		id		0	0	0
+Alignment	baseRecalibrator		program	GATK 3.7	1	1	1
+Alignment	coverage		program	GATK 3.7	1	1	1
+Alignment	fastqc		program	Fastqc 0.11.5	1	1	1
+Alignment	flagStat		program	bamStat (in house)	1	1	1
+Alignment	idxStats		program	Samtools 0.1.19	1	1	1
+Alignment	indelRealigner		program	GATK 3.7	1	1	1
+Alignment	inHousePipeline		program	run_alignment.pl	1	1	1
+Alignment	insertSizeMetrics		program	Picard 1.110	1	1	1
+Alignment	markDuplicates		program	Picard-tools 1.108	1	1	1
+Alignment	mergeTool		program	Sambamba 0.6.6	1	1	1
+Alignment	printReads		program	GATK 3.7	1	1	1
+Alignment	realignerTarget		program	GATK 2.8.1	1	1	1
+Alignment	reference		string	hs37d5	1	1	1
+Alignment	sampleId		id		0	0	0
+Alignment	sequencingId		id		0	0	0
+Alignment	site		string		1	1	1
+Celltransplant	cellSource		string		2	2	2
+Celltransplant	courseNumber		integer		1	1	1
+Celltransplant	donorType		string		1	1	1
+Celltransplant	patientId		datetime		0	0	0
+Celltransplant	startDate		string		1	1	1
+Celltransplant	treatmentPlanId		id		0	0	0
+Chemotherapy	courseNumber		string		1	1	1
+Chemotherapy	daysPerCycle		integer		1	1	1
+Chemotherapy	dose		integer		1	1	1
+Chemotherapy	doseFrequency		integer		1	1	1
+Chemotherapy	doseUnit		string		1	1	1
+Chemotherapy	numberOfCycle		integer		1	1	1
+Chemotherapy	patientId		id		0	0	0
+Chemotherapy	protocolCode		string		1	1	1
+Chemotherapy	recordingDate		datetime		1	1	1
+Chemotherapy	route		string		1	1	1
+Chemotherapy	startDate		datetime		1	1	1
+Chemotherapy	stopDate		datetime		1	1	1
+Chemotherapy	systematicTherapyAgentName		string		1	1	1
+Chemotherapy	treatingCentreName		string		1	1	1
+Chemotherapy	treatmentIntent		string		2	2	2
+Chemotherapy	treatmentPlanId		id		0	0	0
+Chemotherapy	type		string		1	1	1
+Chemotherapy	attributes.startInterval	LabKey specific field	integer		1	0	1
+Chemotherapy	attributes.beginningDateOfTreatment	LabKey specific field	integer		1	0	1
+Chemotherapy	attributes.savets	LabKey specific field	string		1	0	1
+Chemotherapy	attributes.instanceName	LabKey specific field	string		1	0	1
+Chemotherapy	attributes.differenciateId	LabKey specific field	string		1	0	1
+Chemotherapy	attributes.endDateOfTreatment	LabKey specific field	integer		1	0	1
+Chemotherapy	attributes.endInterval	LabKey specific field	integer		1	0	1
+Chemotherapy	attributes.therapyTimepoint	LabKey specific field	integer		1	0	1
+Chemotherapy	attributes.therapyAgent	LabKey specific field	string		1	0	1
+Complication	date		datetime	2009-12-12 00:00:00	1	1	1
+Complication	lateComplicationOfTherapyDeveloped		string		1	1	1
+Complication	lateToxicityDetail		string		1	1	1
+Complication	patientId		id		0	0	0
+Complication	suspectedTreatmentInducedNeoplasmDeveloped		boolean		2	2	2
+Complication	treatmentInducedNeoplasmDetails		string		2	2	2
+Consent	assentFormVersion		string	5	2	2	2
+Consent	consentDate		datetime	2008-03-06 00:00:00	3	3	3
+Consent	consentFormComplete		boolean	yes/no	1	1	1
+Consent	consentId		id		2	2	2
+Consent	consentingCoordinatorName		string	Dr. Kester Ali	3	3	3
+Consent	consentVersion		string	3	1	1	1
+Consent	dateOfAssent		datetime	2013-01-22 00:00:00	3	3	3
+Consent	dateOfConsentWithdrawal		datetime	YYYY-MM-DD	3	3	3
+Consent	hasConsentBeenWithdrawn		boolean	yes/no	2	2	2
+Consent	ifAssentNotObtainedWhyNot		string		2	2	2
+Consent	nameOfOtherBiobank		string		1	1	1
+Consent	patientConsentedTo		string		3	3	3
+Consent	patientId		id		0	0	0
+Consent	previouslyConsented		boolean	yes/no	2	2	2
+Consent	reasonForConsentWithdrawal		string		3	3	3
+Consent	reasonForRejection		string		3	3	3
+Consent	reconsentDate		datetime	2014-05-11 00:00:00	3	3	3
+Consent	reconsentVersion		string	6	2	2	2
+Consent	typeOfConsentWithdrawal		string		3	3	3
+Consent	wasAssentObtained		string	yes/no	2	2	2
+Diagnosis	additionalMolecularDiagnosticTestingPerformed		string		2	2	2
+Diagnosis	additionalMolecularTesting		string		2	2	2
+Diagnosis	additionalTest		string		2	2	2
+Diagnosis	additionalTestType		string		2	2	2
+Diagnosis	ageAtDiagnosis		integer	44	1	1	1
+Diagnosis	biomarkerQuantification		string		2	2	2
+Diagnosis	cancerSite		string	Capillaries	0	0	0
+Diagnosis	cancerSpecificBiomarkers		string		2	2	2
+Diagnosis	cancerType		string	Bladder Urothelial Carcinoma	0	0	0
+Diagnosis	classification		string	Carcinoma	0	0	0
+Diagnosis	diagnosisDate		datetime	2006-04-04 00:00:00	1	1	1
+Diagnosis	diagnosisId		id		0	0	0
+Diagnosis	gradingSystemUsed		string		2	2	2
+Diagnosis	histology		string		0	0	0
+Diagnosis	laboratoryAddress		string		3	3	3
+Diagnosis	laboratoryName		string		2	2	2
+Diagnosis	methodOfDefinitiveDiagnosis		string	blood test	0	0	0
+Diagnosis	patientId		id		0	0	0
+Diagnosis	prognosticBiomarkers		string		2	2	2
+Diagnosis	sampleSite		string	Large intestine	0	0	0
+Diagnosis	sampleType		string	metastatic	0	0	0
+Diagnosis	siteOfMetastases		string		1	1	1
+Diagnosis	sitesOfMetastases		string	Esophagus	0	0	0
+Diagnosis	specificStage		string		2	2	2
+Diagnosis	specificTumorStageAtDiagnosis		string	2	1	1	1
+Diagnosis	stagingSystem		string		2	2	2
+Diagnosis	stagingSystemVersion		string		2	2	2
+Diagnosis	tumorGrade		string	G3	1	1	1
+Diagnosis	versionOrEditionOfTheStagingSystem		string	4.1.2	0	0	0
+Enrollment	ageAtEnrollment		integer		0	0	0
+Enrollment	crossEnrollment		string		2	2	2
+Enrollment	eligibilityCategory		string		2	2	2
+Enrollment	enrollmentApprovalDate		datetime	2006-12-03 00:00:00	3	3	3
+Enrollment	enrollmentInstitution		string	The Hospital for Sick Children	2	2	2
+Enrollment	otherPersonalizedMedicineStudyId		string		1	1	1
+Enrollment	otherPersonalizedMedicineStudyName		string		1	1	1
+Enrollment	patientId		id		0	0	0
+Enrollment	primaryOncologistContact		string		3	3	3
+Enrollment	primaryOncologistName		string	Dr. Elicia Peters	3	3	3
+Enrollment	referringPhysicianContact		string		3	3	3
+Enrollment	referringPhysicianName		string	Dr. Darcey Davila	3	3	3
+Enrollment	statusAtEnrollment		string		2	2	2
+Enrollment	summaryOfIdRequest		string		2	2	2
+Enrollment	treatingCentreName		string	BCCA	2	2	2
+Enrollment	treatingCentreProvince		string	BC	0	0	0
+ExpressionAnalysis	alignmentTool		program	STAR 2.4.2	1	1	1
+ExpressionAnalysis	bamHandling		program	Picard 2.10.7	1	1	1
+ExpressionAnalysis	expressionAnalysisId		id		0	0	0
+ExpressionAnalysis	expressionEstimation		program	HTSeq 0.9.0	1	1	1
+ExpressionAnalysis	readLength		interger	75	1	1	1
+ExpressionAnalysis	reference		string	hg19	1	1	1
+ExpressionAnalysis	sampleId		id		0	0	0
+ExpressionAnalysis	sequencingId		id		0	0	0
+ExpressionAnalysis	site		string		1	1	1
+Extraction	dnaBlood		string	QIAmp DNA Blood Mini Kit	1	1	1
+Extraction	dnaTissue		string	QIAmp micro column	1	1	1
+Extraction	extractionId		id		0	0	0
+Extraction	rnaBlood		string	QIASymphony	1	1	1
+Extraction	rnaTissue		string	Qiagen RNEasy micro kit	1	1	1
+Extraction	sampleId		id		0	0	0
+Extraction	site		string		1	1	1
+FusionDetection	alignmentId		id		0	0	0
+FusionDetection	annotation		program	ENSEMBL	1	1	1
+FusionDetection	fusionDetection		array of programs	[Starfusion, FusionCatcher]	1	1	1
+FusionDetection	fusionDetectionId		id		0	0	0
+FusionDetection	geneModels		string		0	0	0
+FusionDetection	genomeReference		string		0	0	0
+FusionDetection	inHousePipeline		program	Starfusion	1	1	1
+FusionDetection	realignment		array of programs	[STAR 2.4.2, Blast 2.2.29]	1	1	1
+FusionDetection	sampleId		id		0	0	0
+FusionDetection	site		string		1	1	1
+FusionDetection	svDetection		array of programs	[Manta 1.3.2, Lumpy 0.7.7]	1	1	1
+Immunotherapy	courseNumber		integer		1	1	1
+Immunotherapy	immunotherapyDetails		string		1	1	1
+Immunotherapy	immunotherapyTarget		string		1	1	1
+Immunotherapy	immunotherapyType		string		1	1	1
+Immunotherapy	patientId		id		0	0	0
+Immunotherapy	startDate		datetime		1	1	1
+Immunotherapy	treatmentPlanId		id		0	0	0
+Labtest	collectionDate		datetime		1	1	1
+Labtest	endDate		datetime		1	1	1
+Labtest	eventType		string		1	1	1
+Labtest	patientId		id		0	0	0
+Labtest	recordingDate		datetime		1	1	1
+Labtest	startDate		datetime		1	1	1
+Labtest	testResults		string		2	2	2
+Labtest	timePoint		string		1	1	1
+Outcome	dateOfAssessment		datetime	2012-08-22 00:00:00	2	2	2
+Outcome	diseaseFreeSurvivalInMonths		integer		1	1	1
+Outcome	diseaseResponseOrStatus		string	Complete Response	1	1	1
+Outcome	height		float	153	1	1	1
+Outcome	heightUnits		string	cm	1	1	1
+Outcome	methodOfResponseEvaluation		string		2	2	2
+Outcome	minimalResidualDiseaseAssessment		string		2	2	2
+Outcome	otherResponseClassification		string		2	2	2
+Outcome	overallSurvivalInMonths		integer		1	1	1
+Outcome	patientId		id		0	0	0
+Outcome	performanceStatus		string		1	1	1
+Outcome	physicalExamId		string		0	0	0
+Outcome	responseCriteriaUsed		string		2	2	2
+Outcome	sitesOfAnyProgressionOrRecurrence		string		2	2	2
+Outcome	summaryStage		string		2	2	2
+Outcome	vitalStatus		string		2	2	2
+Outcome	weight		float	55	1	1	1
+Outcome	weightUnits		string	kg	1	1	1
+Patient	autopsyTissueForResearch		string	yes/no	0	0	0
+Patient	causeOfDeath		string	Respiratory infections	1	1	1
+Patient	dateOfBirth		datetime		4	4	4
+Patient	dateOfDeath		datetime		2	2	2
+Patient	dateOfPriorMalignancy		datetime		2	2	2
+Patient	detailsOfPredispositionSyndrome		string		2	2	2
+Patient	ethnicity		string	Canadian	2	2	2
+Patient	familyHistoryAndRiskFactors		string		2	2	2
+Patient	familyHistoryOfPredispositionSyndrome		string		2	2	2
+Patient	gender		string	Male/Female	0	0	0
+Patient	geneticCancerSyndrome		string		2	2	2
+Patient	occupationalOrEnvironmentalExposure		string	Electric & Magnetic Fields	1	1	1
+Patient	otherGeneticConditionOrSignificantComorbidity		string		2	2	2
+Patient	otherIds		id	11861	0	0	0
+Patient	patientId		id		0	0	0
+Patient	priorMalignancy		string	hypertension	2	2	2
+Patient	provinceOfResidence		string	Novanut	0	0	0
+Patient	race		string	Aboriginal	2	2	2
+Radiotherapy	adjacentFields		string		2	2	2
+Radiotherapy	adjacentFractions		string		2	2	2
+Radiotherapy	baseline		string		2	2	2
+Radiotherapy	boostDose		integer		1	1	1
+Radiotherapy	boostSite		string		1	1	1
+Radiotherapy	brachytherapyDose		integer		2	2	2
+Radiotherapy	complete		string		1	1	1
+Radiotherapy	courseNumber		integer		1	1	1
+Radiotherapy	patientId		id		0	0	0
+Radiotherapy	radiationSite		string		1	1	1
+Radiotherapy	radiationType		string		1	1	1
+Radiotherapy	radiotherapyDose		integer		2	2	2
+Radiotherapy	recordingDate		datetime		1	1	1
+Radiotherapy	siteNumber		integer		1	1	1
+Radiotherapy	startDate		datetime		1	1	1
+Radiotherapy	startIntervalRad		float		2	2	2
+Radiotherapy	startIntervalRadRaw		float		2	2	2
+Radiotherapy	stopDate		datetime		1	1	1
+Radiotherapy	technique		string		1	1	1
+Radiotherapy	testResult		string		2	2	2
+Radiotherapy	testResultStd		string		2	2	2
+Radiotherapy	therapeuticModality		string		1	1	1
+Radiotherapy	totalDose		integer		1	1	1
+Radiotherapy	treatedRegion		string		1	1	1
+Radiotherapy	treatingCentreName		string		1	1	1
+Radiotherapy	treatmentPlanId		id		0	0	0
+Sample	anatomicSiteTheSampleObtainedFrom		string		1	1	1
+Sample	associatedBiobank		string		1	1	1
+Sample	cancerSubtype		string		0	0	0
+Sample	cancerType		string	Leukemia	0	0	0
+Sample	collectionDate		datetime		2	2	2
+Sample	collectionHospital		string	BCCA	1	1	1
+Sample	diagnosisId		id		0	0	0
+Sample	estimatedTumorContent		float	88	0	0	0
+Sample	ifNotExplainAnyDeviation		string		2	2	2
+Sample	localBiobankId		id		0	0	0
+Sample	morphologicalCode		string		0	0	0
+Sample	otherBiobank		string		2	2	2
+Sample	pathologyReportId		id	51380	3	3	3
+Sample	patientId		id		0	0	0
+Sample	qualityControlPerformed		boolean	yes/no	1	1	1
+Sample	quantity		float	5	2	2	2
+Sample	receivedDate		datetime	2016-02-01 00:00:00	3	3	3
+Sample	recordingDate		datetime		1	1	1
+Sample	sampleId		id		0	0	0
+Sample	sampleType		string		1	1	1
+Sample	shippingDate		datetime	2014-08-29 00:00:00	3	3	3
+Sample	sopFollowed		boolean	yes/no	1	1	1
+Sample	startInterval		integer		1	1	1
+Sample	tissueDiseaseState		string		2	2	2
+Sample	topologicalCode		string	C306	0	0	0
+Sample	units		string	grams	2	2	2
+Sample	attributes.collectionTimePoint	LabKey specific field	integer		1	1	1
+Sequencing	dnaLibraryKit		string	Illumina TruSeq PCR-free library prep kit	1	1	1
+Sequencing	dnaReadLength		string	Paired end, 150 bp	1	1	1
+Sequencing	dnaSeqPlatform		string	HiSeq X	1	1	1
+Sequencing	extractionId		id		0	0	0
+Sequencing	pcrCycles		integer	13	1	1	1
+Sequencing	rnaLibraryKit		string	NEBNext Ultra II	1	1	1
+Sequencing	rnaReadLength		string	Paired end, 125 bp	1	1	1
+Sequencing	rnaSeqPlatform		string	HiSeq 2500	1	1	1
+Sequencing	sampleId		id		0	0	0
+Sequencing	sequencingId		id		0	0	0
+Sequencing	site		string		1	1	1
+Slide	eosinophilInfiltrationPercent		float		1	1	1
+Slide	granulocyteInfiltrationPercent		float		1	1	1
+Slide	inflammatoryInfiltrationPercent		float		1	1	1
+Slide	lymphocyteInfiltrationPercent		string		1	1	1
+Slide	monocyteInfiltrationPercent		float		1	1	1
+Slide	necrosisPercent		float		1	1	1
+Slide	neutrophilInfiltrationPercent		float		1	1	1
+Slide	normalCellsPercent		float		1	1	1
+Slide	patientId		id		0	0	0
+Slide	proliferatingCellsNumber		integer		1	1	1
+Slide	sampleId		id		0	0	0
+Slide	sectionLocation		string		1	1	1
+Slide	slideId		id		0	0	0
+Slide	slideOtherId		id		0	0	0
+Slide	stromalCellsPercent		float		1	1	1
+Slide	tumorCellsPercent		float		1	1	1
+Slide	tumorNucleiPercent		float		1	1	1
+Study	endDate		datetime		1	1	1
+Study	patientId		id		0	0	0
+Study	recordingDate		datetime		1	1	1
+Study	startDate		datetime		1	1	1
+Study	status		string		1	1	1
+Surgery	collectionTimePoint		string		1	1	1
+Surgery	courseNumber		integer		1	1	1
+Surgery	diagnosisDate		datetime		1	1	1
+Surgery	patientId		id		0	0	0
+Surgery	recordingDate		datetime		1	1	1
+Surgery	sampleId		id		0	0	0
+Surgery	site		string		1	1	1
+Surgery	startDate		datetime		1	1	1
+Surgery	stopDate		datetime		1	1	1
+Surgery	treatmentPlanId		id		1	1	1
+Surgery	type		string		1	1	1
+Treatment	chemotherapyDetails		string		1	1	1
+Treatment	courseNumber		integer	3	1	1	1
+Treatment	dateOfRecurrenceOrProgressionAfterThisTreatment		datetime		1	1	1
+Treatment	drugIdNumbers		string		1	1	1
+Treatment	drugListOrAgent		string		1	1	1
+Treatment	hematopoieticCellTransplant		string		1	1	1
+Treatment	immunotherapyDetails		string		1	1	1
+Treatment	patientId		id		0	0	0
+Treatment	protocolNumberOrCode		string		1	1	1
+Treatment	radiotherapyDetails		string		1	1	1
+Treatment	reasonForEndingTheTreatment		string		2	2	2
+Treatment	responseCriteriaUsed		string		2	2	2
+Treatment	responseToTreatment		string	Stable Disease	1	1	1
+Treatment	startDate		datetime	2004-06-25 00:00:00	1	1	1
+Treatment	stopDate		datetime	2006-06-20 00:00:00	1	1	1
+Treatment	surgeryDetails		string		2	2	2
+Treatment	systematicTherapyAgentName		string		1	1	1
+Treatment	therapeuticModality		string	Radiation therapy	1	1	1
+Treatment	treatmentIntent		string		2	2	2
+Treatment	treatmentPlanType		string		2	2	2
+Treatment	unexpectedOrUnusualToxicityDuringTreatment		string		1	1	1
+Tumourboard	actionableTargetFound		string		2	2	2
+Tumourboard	agentOrDrugClass		string		2	2	2
+Tumourboard	analysesDiscussed		string		2	2	2
+Tumourboard	classificationOfVariants		string		2	2	2
+Tumourboard	clinicalValidationProgress		string		2	2	2
+Tumourboard	cnvsDiscussed		string		2	2	2
+Tumourboard	dateOfMolecularTumorBoard		datetime		3	3	3
+Tumourboard	detailsOfTreatmentPlanImpact		string		2	2	2
+Tumourboard	didTreatmentPlanChangeBasedOnProfilingResult		boolean		2	2	2
+Tumourboard	diseaseExpressionComparator		string		2	2	2
+Tumourboard	germlineDnaSampleId		id		2	2	2
+Tumourboard	germlineSnvDiscussed		string		2	2	2
+Tumourboard	hasAGermlineVariantBeenIdentifiedByProfilingThatMayPredisposeToCancer		boolean		2	2	2
+Tumourboard	howTreatmentHasAlteredBasedOnProfiling		string		2	2	2
+Tumourboard	levelOfEvidenceForExpressionTargetAgentMatch		string		2	2	2
+Tumourboard	molecularTumorBoardRecommendation		string		2	2	2
+Tumourboard	normalExpressionComparator		string		2	2	2
+Tumourboard	patientHasBeenReferredToAHereditaryCancerProgramBasedOnThisMolecularProfiling		boolean		2	2	2
+Tumourboard	patientId		id		0	0	0
+Tumourboard	patientOrFamilyInformedOfGermlineVariant		boolean		2	2	2
+Tumourboard	reasonTreatmentPlanDidNotChangeBasedOnProfiling		string		2	2	2
+Tumourboard	somaticSampleType		string	metastatic	2	2	2
+Tumourboard	somaticSnvDiscussed		string		2	2	2
+Tumourboard	structuralVariantDiscussed		string		2	2	2
+Tumourboard	summaryReport		string		3	3	3
+Tumourboard	tumorDnaSampleId		id		2	2	2
+Tumourboard	tumorRnaSampleId		id		2	2	2
+Tumourboard	typeOfSampleAnalyzed		string	peripheral blood	2	2	2
+Tumourboard	typeOfTumourSampleAnalyzed		string		2	2	2
+Tumourboard	typeOfValidation		string		2	2	2
+VariantCalling	alignmentId		id		0	0	0
+VariantCalling	annotation		program	SNPEff 4.1a	1	1	1
+VariantCalling	clipFilter		program	filter_clips.R 3.4.0	1	1	1
+VariantCalling	cosmic		program	Cosmic 0.68	1	1	1
+VariantCalling	dbSnp		string	dbsnp.b17.b37.vcf	1	1	1
+VariantCalling	delly		program	Delly 0.5.9	1	1	1
+VariantCalling	inHousePipeline		program	run_ssm.pl	1	1	1
+VariantCalling	mergeTool		program	run_ssm_standard.R	1	1	1
+VariantCalling	postFilter		program	run_snv_postfiltering.R 3.4.0	1	1	1
+VariantCalling	rdaToTab		program	convert_mutect2.R	1	1	1
+VariantCalling	sampleId		id		0	0	0
+VariantCalling	site		string		2	2	2
+VariantCalling	tabulate		program	mutect2annovar.pl	1	1	1
+VariantCalling	variantCaller		program	GATK Mutect 3.50	1	1	1
+VariantCalling	variantCallingId		id		0	0	0

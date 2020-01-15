@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CanDIG server {{ info.getServerVersion()}}</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+        <link rel=stylesheet type=text/css href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+    <div class="container">
+        <h2>CanDIG server {{ info.getServerVersion() }}</h2>
+        <div>
+            <h3>Protocol version {{ info.getProtocolVersion() }}</h3>
+        </div>
+        <div>
+            {{ info.getLandingMessageHtml() | safe}}
+        </div>
+        <div>
+            <h3>Registered peers</h3>
+            <table class="table table-striped">
+                <tr>
+                    <th>URL</th>
+                </tr>
+                {% for peer in info.getPeers() %}
+                <tr>
+                    <td>{{ peer.getUrl() }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <div>
+            <h3>Operations available</h3>
+            <table class="table table-striped">
+                <tr>
+                    <th>Method</th>
+                    <th>Path</th>
+                    <th>Response</th>
+                    <th>Request Body</th>
+                </tr>
+                <tr>
+                    <td>POST</td>
+                    <td>/token</td>
+                    <td>An access token</td>
+                    <td>{"username": "your_username", "password": "your_password"}</td>
+                </tr>
+            </table>
+
+            For information on data-related endpoints, see <a href="/api_info">API Info Page</a>
+        </div>
+        <div>
+            <h3>Uptime</h3>
+            Running since {{ info.getNaturalUptime()}} ({{ info.getPreciseUptime()}})
+        </div>
+        <div>
+            <h3>Configuration</h3>
+            <table class="table table-striped">
+                <tr>
+                    <th>Key</th>
+                    <th>Value</th>
+                </tr>
+                {% for key, value in info.getConfiguration() %}
+                <tr>
+                    <td>{{ key }}</td>
+                    <td>{{ value }}</td>
+                </tr>
+                {% endfor %}
+            </table>
+        </div>
+        <div>
+            <h3>Data</h3>
+
+            {% for dataset in info.getDatasets() %}
+            <h4>Dataset name: {{ dataset.getLocalId() }} id: {{ dataset.getId() }}</h4>
+            {% endfor %}
+
+        </div>
+    </div></body>
+</html>

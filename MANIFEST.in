@@ -1,0 +1,6 @@
+include README.rst
+include LICENSE
+include candig/metadata/templates/*.html
+include candig/metadata/static/*
+include candig/metadata/static/dist/*.js
+
