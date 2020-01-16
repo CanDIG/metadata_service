@@ -50,7 +50,7 @@ setup(
     ],
     namespace_packages=[
         "candig",
-        "candig.metadata",
+        # "candig.metadata",
     ],
     zip_safe=False,
     url="https://github.com/CanDIG/metadata_service",

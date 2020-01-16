@@ -1,6 +1,6 @@
 """Metadata version information."""
 
-__import__('pkg_resources').declare_namespace(__name__)
+#__import__('pkg_resources').declare_namespace(__name__)
 
 __version__ = "0.5.0"
 try:
